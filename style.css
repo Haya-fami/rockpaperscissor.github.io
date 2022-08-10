@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+body {
+    margin-top: 3rem;
+    background-color: rgb(28, 28, 59);
+    color: white;
+}
+
+header {
+    padding: 1rem 0rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(17, 163, 248);
+
+}
+
+
+.score-board {
+    border: 2px solid white;
+    width: 30%;
+    margin: 3rem auto;
+    border-radius: 10px;
+    padding: 1rem 0rem;
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.badge {
+    font-size: 0.9rem;
+    position: absolute;
+    background-color: rgb(0, 157, 255);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+}
+
+#comp-label {
+    right: -22%;
+    top: 30%;
+}
+
+#user-label {
+    left: -15%;
+    top: 30%;
+}
+
+.result {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.choices {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.choice {
+    width: 20%;
+    text-align: center;
+    border: 3px solid white ;
+    border-radius: 50%;
+    padding: 1.5rem 0rem;
+    transition: all 0.5s ease-in-out;
+}
+
+button{
+    border: none;
+    background : none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: medium;
+    color:  rgb(6, 85, 134);
+}
+
+#rock, #paper, #scissor{
+    background: white;
+}
+
+.choice :hover {
+    cursor: pointer;
+}   
+
+
+.choice > img {
+    width: 50%;
+}
+
+.action_text{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media(max-width:700px) {
+    .score-board {
+        padding: 2rem 0rem;
+    }
+
+    #user-label {
+        left: -20%;
+    }
+
+    #comp-label {
+        right: -30%;
+    }
+}
+
+@media (max-width: 600px) {
+    #user-label {
+        left: -27%;
+        top: 35%;
+    }
+
+    #comp-label {
+        right: -48%;
+        top: 35%;
+        
+    }
+}
+
+.choices > .win {
+    border: 3px solid #008000;
+    box-shadow: 1px 1px 15px green;
+}
+
+.choices > .lost {
+    border: 3px solid red;
+    box-shadow: 1px 1px 15px red;
+}
+
+.choices > .draw {
+    border: 3px solid yellow;
+    box-shadow: 1px 1px 15px yellow;
+}
+
+#play{
+    background-color: rgb(23, 147, 254);
+    color: white;
+    font-size: large;
+    border-radius: 20px;
+    padding: 0.3rem 2rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+
+
+
+
